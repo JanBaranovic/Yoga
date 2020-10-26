@@ -1,0 +1,60 @@
+main {
+    height: 90vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+
+    .introduction {
+        flex: 1 1 40rem;
+        color: $text-color;
+        
+        .introduction-header {
+            font-size: 5rem;
+        }
+
+        .introduction-text {
+            font-size: 2rem;
+            padding: 1.5rem 0;
+        }
+    }
+
+    .intro-image {
+        flex: 1 1 40rem;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    input {
+        margin-top: 1.5rem;
+        border: 0.4rem solid $bg-color;
+        background: $main-color;
+        color: $bg-color;
+        border: .4rem solid $main-color;
+        padding: 1.4rem 3.8rem;
+        font-size: 2.2rem;
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+            color: $bg-color;
+            background: transparent;
+            color: $main-color;
+        }
+    }
+    }
+
+.special-word {
+    font-size: 6.4rem;
+    color: $main-color;
+    text-transform: uppercase;
+}
+
+.decoration-element {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}

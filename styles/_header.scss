@@ -1,0 +1,39 @@
+header {
+    height: 10vh;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+
+    #logo {
+        flex: 3 1 40rem;
+        font-family: 'Pacifico', cursive;
+        font-size: 3.6rem;
+    }
+
+    nav {
+        flex: 1 1 40rem;
+    }
+
+    .nav-links {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+#logo a {
+    background: -webkit-linear-gradient($main-color, $light-main-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-links li {
+    list-style: none;
+
+    a {
+        color: $text-color;
+        font-size: 1.8rem;
+    }
+}
