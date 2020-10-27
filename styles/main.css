@@ -1,3 +1,5 @@
+/* VASRIEBLES */
+/* MIXINS */
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +12,7 @@ html {
   font-family: 'Montserrat', sans-serif;
 }
 
-body {
+.home {
   height: 100vh;
   overflow: hidden;
 }
@@ -72,7 +74,7 @@ header .nav-links {
   font-size: 1.8rem;
 }
 
-main {
+.home-main {
   height: 90vh;
   width: 90%;
   margin: auto;
@@ -84,46 +86,46 @@ main {
           align-items: center;
 }
 
-main .introduction {
+.home-main .introduction {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
   color: #6E6E6E;
 }
 
-main .introduction .introduction-header {
+.home-main .introduction .introduction-header {
   font-size: 5rem;
 }
 
-main .introduction .introduction-text {
+.home-main .introduction .introduction-text {
   font-size: 2rem;
   padding: 1.5rem 0;
 }
 
-main .intro-image {
+.home-main .intro-image {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
 }
 
-main .intro-image img {
+.home-main .intro-image img {
   width: 100%;
 }
 
-main input {
+.home-main input {
   margin-top: 1.5rem;
+  padding: 1.4rem 3.8rem;
   border: 0.4rem solid #fff;
   background: #3BC4C1;
   color: #fff;
   border: 0.4rem solid #3BC4C1;
-  padding: 1.4rem 3.8rem;
   font-size: 2.2rem;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   cursor: pointer;
 }
 
-main input:hover {
+.home-main input:hover {
   color: #fff;
   background: transparent;
   color: #3BC4C1;
@@ -140,5 +142,174 @@ main input:hover {
   right: 0;
   top: 0;
   z-index: -1;
+}
+
+.home {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.about-article {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.about-article .main-header {
+  font-size: 6.4rem;
+  color: #6E6E6E;
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.text-section {
+  padding: 4rem 0;
+}
+
+.text-section .section-heading {
+  font-size: 3.6rem;
+  color: #3BC4C1;
+  font-weight: 400;
+}
+
+.text-section .section-text {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  color: #6E6E6E;
+}
+
+.image-section img {
+  width: 100%;
+}
+
+.contact-main {
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.image-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  position: relative;
+}
+
+.image-container img {
+  position: absolute;
+  left: 50%;
+  top: -20%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 60%;
+  -webkit-filter: drop-shadow(0 3px 2px #6E6E6E);
+          filter: drop-shadow(0 3px 2px #6E6E6E);
+}
+
+.contact-form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+.contact-form .form-group {
+  padding: 2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border: 2px solid #237674;
+  font-size: 1.8rem;
+  padding: .4rem .8rem;
+  width: 100%;
+  background: transparent;
+  color: #6E6E6E;
+}
+
+.contact-form input[type="submit"] {
+  border: 0.4rem solid #fff;
+  background: #3BC4C1;
+  color: #fff;
+  border: 0.4rem solid #3BC4C1;
+  font-size: 2.2rem;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+  color: #fff;
+  background: transparent;
+  color: #3BC4C1;
+}
+
+label {
+  display: block;
+  padding: 1rem 0;
+  font-size: 1.6rem;
+  color: #6E6E6E;
+}
+
+.footer {
+  height: 10vh;
+  background: #6E6E6E;
+}
+
+.footer .footer-container {
+  width: 90%;
+  height: 10vh;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 1.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-description {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 40rem;
+          flex: 2 1 40rem;
+}
+
+.icons {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.icons a {
+  color: #fff;
+  font-size: 2.4rem;
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+.icons a:hover {
+  color: #3BC4C1;
 }
 /*# sourceMappingURL=main.css.map */

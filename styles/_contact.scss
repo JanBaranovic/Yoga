@@ -1,0 +1,55 @@
+.contact-main {
+    height: 80vh;
+    display: flex;
+}
+
+.image-container {
+    flex: 1 1 40rem;
+    position: relative;
+
+    img {
+        position: absolute;
+        left: 50%;
+        top: -20%;
+        transform: translateX(-50%);
+        width: 60%;
+        filter: drop-shadow(0 3px 2px $text-color);
+    }
+}
+
+
+.contact-form {
+    flex: 1 1 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    .form-group {
+        padding: 2rem;
+    }
+
+    input,
+    textarea {
+        border: 2px solid $dark-main-color;
+        font-size: 1.8rem;
+        padding: .4rem .8rem;
+        width: 100%;
+        background: transparent;
+        color: $text-color;
+    }
+
+    input[type="submit"] {
+        @include button;
+    }
+}
+
+label {
+    display: block;
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    color: $text-color;
+}
+
+
+

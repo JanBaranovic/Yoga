@@ -1,4 +1,4 @@
-main {
+.home-main {
     height: 90vh;
     width: 90%;
     margin: auto;
@@ -29,22 +29,10 @@ main {
 
     input {
         margin-top: 1.5rem;
-        border: 0.4rem solid $bg-color;
-        background: $main-color;
-        color: $bg-color;
-        border: .4rem solid $main-color;
         padding: 1.4rem 3.8rem;
-        font-size: 2.2rem;
-        transition: all .3s ease-in-out;
-        cursor: pointer;
-
-        &:hover {
-            color: $bg-color;
-            background: transparent;
-            color: $main-color;
-        }
+        @include button;
     }
-    }
+}
 
 .special-word {
     font-size: 6.4rem;
@@ -57,4 +45,9 @@ main {
     right: 0;
     top: 0;
     z-index: -1;
+}
+
+.home{
+    height: 100vh;
+    overflow: hidden;
 }

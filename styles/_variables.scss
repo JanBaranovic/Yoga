@@ -1,4 +1,25 @@
+/* VASRIEBLES */
+
 $main-color: #3BC4C1;
 $text-color: #6E6E6E;
 $bg-color: #fff;
-$light-main-color: lighten($main-color, 40%)
+$light-main-color: lighten($main-color, 40%);
+$dark-main-color: darken($main-color, 20%);
+
+/* MIXINS */
+
+@mixin button {
+    border: 0.4rem solid $bg-color;
+    background: $main-color;
+    color: $bg-color;
+    border: .4rem solid $main-color;
+    font-size: 2.2rem;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        color: $bg-color;
+        background: transparent;
+        color: $main-color;
+    }
+}

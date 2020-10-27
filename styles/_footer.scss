@@ -1,0 +1,36 @@
+.footer {
+    height: 10vh;
+    background: $text-color;
+
+    .footer-container {
+        width: 90%;
+        height: 10vh;
+        margin: 0 auto;
+        color: $bg-color;
+        font-size: 1.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.footer-description {
+    flex: 2 1 40rem;
+}
+
+.icons {
+    flex: 1 1 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    a {
+        color: $bg-color;
+        font-size: 2.4rem;
+        transition: all .1s ease-in-out;
+
+        &:hover {
+            color: $main-color;
+        }
+    }
+}

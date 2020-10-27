@@ -1,0 +1,33 @@
+.about-article {
+    width: 50%;
+    margin: 0 auto;
+
+    .main-header {
+        font-size: 6.4rem;
+        color: $text-color;
+        text-align: center;
+        padding: 5rem 0;
+    }
+}
+
+.text-section {
+    padding: 4rem 0;
+
+    .section-heading {
+        font-size: 3.6rem;
+        color: $main-color;
+        font-weight: 400;
+    }
+
+    .section-text {
+        font-size: 1.8rem;
+        line-height: 1.4;
+        color: $text-color;
+    }
+}
+
+.image-section {
+    img {
+        width: 100%;
+    }
+}
