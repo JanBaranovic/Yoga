@@ -3,6 +3,7 @@ header {
     padding: 2rem 0;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     width: 90%;
     margin: auto;
 
@@ -35,5 +36,16 @@ header {
     a {
         color: $text-color;
         font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 711px) {
+    #logo {
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .decoration-element {
+        display: none;
     }
 }

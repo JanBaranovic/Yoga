@@ -13,7 +13,6 @@ html {
 }
 
 .home {
-  height: 100vh;
   overflow: hidden;
 }
 
@@ -30,6 +29,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 90%;
   margin: auto;
 }
@@ -74,6 +75,16 @@ header .nav-links {
   font-size: 1.8rem;
 }
 
+@media screen and (max-width: 711px) {
+  #logo {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  .decoration-element {
+    display: none;
+  }
+}
+
 .home-main {
   height: 90vh;
   width: 90%;
@@ -84,12 +95,14 @@ header .nav-links {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .home-main .introduction {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 40rem;
-          flex: 1 1 40rem;
+      -ms-flex: 1 10 50rem;
+          flex: 1 10 50rem;
   color: #6E6E6E;
 }
 
@@ -104,8 +117,8 @@ header .nav-links {
 
 .home-main .intro-image {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 40rem;
-          flex: 1 1 40rem;
+      -ms-flex: 1 1 50rem;
+          flex: 1 1 50rem;
 }
 
 .home-main .intro-image img {
@@ -144,9 +157,40 @@ header .nav-links {
   z-index: -1;
 }
 
-.home {
-  height: 100vh;
-  overflow: hidden;
+@media screen and (max-width: 1004px) {
+  html {
+    font-size: 50%;
+  }
+  .home-main .introduction {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 10rem;
+  }
+  .home-main .intro-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .home-main .intro-image img {
+    width: 70%;
+  }
 }
 
 .about-article {
@@ -181,27 +225,39 @@ header .nav-links {
   width: 100%;
 }
 
+@media screen and (max-width: 1004px) {
+  .about-article {
+    width: 90%;
+  }
+}
+
 .contact-main {
   height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .image-container {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .image-container img {
-  position: absolute;
-  left: 50%;
-  top: -20%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
   width: 60%;
+  min-width: 50rem;
   -webkit-filter: drop-shadow(0 3px 2px #6E6E6E);
           filter: drop-shadow(0 3px 2px #6E6E6E);
 }
@@ -219,7 +275,6 @@ header .nav-links {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100%;
 }
 
 .contact-form .form-group {
@@ -260,6 +315,18 @@ label {
   color: #6E6E6E;
 }
 
+@media screen and (max-width: 722px) {
+  .home {
+    overflow: visible;
+  }
+  .image-container {
+    display: none;
+  }
+  .contact-form {
+    margin-top: 3rem;
+  }
+}
+
 .footer {
   height: 10vh;
   background: #6E6E6E;
@@ -280,6 +347,8 @@ label {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .footer-description {
@@ -311,5 +380,19 @@ label {
 
 .icons a:hover {
   color: #3BC4C1;
+}
+
+@media screen and (max-width: 600px) {
+  .footer-description {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    text-align: center;
+  }
+  .icons {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
 }
 /*# sourceMappingURL=main.css.map */

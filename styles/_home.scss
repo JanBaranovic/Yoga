@@ -4,9 +4,10 @@
     margin: auto;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 
     .introduction {
-        flex: 1 1 40rem;
+        flex: 1 10 50rem;
         color: $text-color;
         
         .introduction-header {
@@ -20,7 +21,7 @@
     }
 
     .intro-image {
-        flex: 1 1 40rem;
+        flex: 1 1 50rem;
 
         img {
             width: 100%;
@@ -47,7 +48,28 @@
     z-index: -1;
 }
 
-.home{
-    height: 100vh;
-    overflow: hidden;
+@media screen and (max-width: 1004px) {
+    html {
+        font-size: 50%;
+    }
+
+    .home-main {
+        .introduction {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-top: 10rem;
+        }
+    
+        .intro-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            img {
+                width: 70%;
+            }
+        }
+    }
 }
